@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.sidemenuandpagecontent{
+    display: flex;
+    width: 100vw;
+    min-height:calc(100vh - 50px);
+    }
+
+.sidebar{
+   width: 240px;
+   background-color: blueviolet;
+   min-height:calc(100vh - 50px);
+    
+   
+}
+.pagecontent{
+    
+    width: calc(100vw - 240px);
+    min-height:calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: black;
+}
+.cardone{
+    background-color: palevioletred;
+    width: 100%;
+    min-height: 50%;
+    display: flex;
+    gap: 30px;
+}
+.cardtwo{
+    background-color: blue;
+    width: 100%;
+    min-height: 50%;
+    display: flex;
+    gap: 30px;
+}
+
+.cardoneone{
+    width: 25%;
+    background-color: white;
+}
+.cardonetwo{
+    width: 25%;
+    background-color: white;
+}
+.cardonethree{
+    width: 50%;
+    
+    background-color: white;
+}
+ .cardtwoone{
+    width: 75%;
+
+    background-color: white;
+}
+.cardtwotwo{
+    width: 25%;
+    background-color: white;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .pagecontent{
+        
+        width: 100vw;
+    
+        }
+  .cardone{
+      flex-wrap: wrap;
+      width: 100%;
+      
+  }
+  .cardoneone{
+    width: 160% ;
+    
+}
+.cardonetwo{
+    width: 100%;
+    
+}
+.cardonethree{
+    width: 100%;
+    
+    
+}
+.cardtwo{
+    flex-wrap: wrap;
+    
+}
+.cardtwoone{
+    width: 100%;
+
+    background-color: white;
+}
+.cardtwotwo{
+    width:100%;
+    background-color: white;
+}
+.sidebar{
+    display: none;
+}
+ 
+} 
+
+
